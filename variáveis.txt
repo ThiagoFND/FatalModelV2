@@ -1,0 +1,55 @@
+Variáveis
+
+User
+
+	String id;
+	String nome;
+	String email;
+	String login;
+	String password;
+	UserRole role;
+
+UserRole
+
+	String role;
+
+
+Dados
+
+    	String id;
+    	String peso;
+    	String descricao;
+
+Endereco
+
+    	private String id;
+    	String cpf;
+    	String logradouro;
+    	String complemento;
+    	String uf;
+    	String numero;
+    	String bairro;
+    	String localidade;
+    	User usuario; 
+
+Informacoes
+
+	String id;
+    	String descricao;
+    	String tipo;
+    	String informacao;
+    	User usuario;
+
+VidFotos
+
+	String id;
+    	byte[] video;
+    	byte[] fotos;
+    	User usuario;
+
+Servico
+
+    String id;
+    String servico;
+    String descricao;
+    User usuario;

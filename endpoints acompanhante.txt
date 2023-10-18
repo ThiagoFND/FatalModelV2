@@ -1,0 +1,85 @@
+DADOS USUÁRIOS
+
+- Id
+- nome
+- email
+- login
+- password
+- role (ADMIN, ACOMPANHANTE ou USER)
+
+* endpoints authentication
+
+- endpoint registrar
+
+  http://localhost:8080/api/auth/register
+
+- endpoint logar
+
+  http://localhost:8080/api/auth/login
+
+* endpoints usuarios
+
+GET (Métodos para listar os dados para todos os usuários)
+
+http://localhost:8080/api/usuario/list/dados
+http://localhost:8080/api/usuario/list/endereco
+http://localhost:8080/api/usuario/list/informacoes
+http://localhost:8080/api/usuario/list/servico
+http://localhost:8080/api/usuario/list/valor
+http://localhost:8080/api/usuario/list/vidfotos
+
+* endpoints acompanhante
+
+POST (Métodos para criar os dados)
+
+http://localhost:8080/api/acompanhante/dados/create
+http://localhost:8080/api/acompanhante/endereco/create
+http://localhost:8080/api/acompanhante/informacoes/create
+http://localhost:8080/api/acompanhante/servico/create
+http://localhost:8080/api/acompanhante/valor/create
+http://localhost:8080/api/acompanhante/vidfotos/create
+
+GET (Métodos para listar os dados, caso queira fazer algo para acompamnhante)
+
+http://localhost:8080/api/acompanhante/dados/list
+http://localhost:8080/api/acompanhante/endereco/list
+http://localhost:8080/api/acompanhante/informacoes/list
+http://localhost:8080/api/acompanhante/servico/list
+http://localhost:8080/api/acompanhante/valor/list
+http://localhost:8080/api/acompanhante/vidfotos/list
+
+PUT (Métodos para atualizar os dados)
+
+http://localhost:8080/api/acompanhante/dados/update/{id}
+http://localhost:8080/api/acompanhante/endereco/update/{id}
+http://localhost:8080/api/acompanhante/informacoes/update/{id}
+http://localhost:8080/api/acompanhante/servico/update/{id}
+http://localhost:8080/api/acompanhante/valor/update/{id}
+http://localhost:8080/api/acompanhante/vidfotos/update/{id}
+
+DELETE (Métodos para deletar os dados)
+
+http://localhost:8080/api/acompanhante/dados/delete/{id}
+http://localhost:8080/api/acompanhante/endereco/delete/{id}
+http://localhost:8080/api/acompanhante/informacoes/delete/{id}
+http://localhost:8080/api/acompanhante/servico/delete/{id}
+http://localhost:8080/api/acompanhante/valor/delete/{id}
+http://localhost:8080/api/acompanhante/vidfotos/delete/{id}
+
+* endpoints admin
+
+GET (Métodos para listar os dados dos users, admin e acompanhante)
+
+http://localhost:8080/api/admin/acompanhante/list
+
+POST (Métodos para cadastrar users, admin e acompanhante)
+
+http://localhost:8080/api/admin/acompanhante/create
+
+PUT (Métodos para atualizar os dados dos users)
+
+http://localhost:8080/api/admin/acompanhante/update/{id}
+
+DELETE (Métodos para deletar os dados dos users)
+
+http://localhost:8080/api/admin/acompanhante/delete/{id}
